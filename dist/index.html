@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5c518" />
+    <meta
+      name="description"
+      content="Una carta de flores amarillas para Valeria Alcívar."
+    />
+    <title>Flores amarillas para Valeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <audio id="backgroundMusic" loop preload="none">
+      <source src="Camilo - El Cisne (Official Video).mp3" type="audio/mpeg" />
+    </audio>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+    <main class="scene">
+      <section class="intro" id="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">Un detalle para</p>
+        <h1 id="intro-title">Valeria Alcívar</h1>
+        <p class="hint">Hay algo especial esperando por ti.</p>
+        <button
+          class="open-button"
+          id="openButton"
+          type="button"
+          aria-controls="letter"
+          aria-expanded="false"
+        >
+          <span>Abrir mi carta</span>
+          <span class="button-flower" aria-hidden="true">✦</span>
+        </button>
+      </section>
+
+      <section class="letter" id="letter" aria-live="polite" aria-hidden="true">
+        <div class="letter-inner">
+          <p class="dedication">Valeria Alcívar</p>
+          <div class="ornament" aria-hidden="true">
+            <span></span><b>✦</b><span></span>
+          </div>
+          <h2>Para mi princesa hermosa:</h2>
+          <p class="message">No me olvidé de tus flores amarillas, mi amor.</p>
+          <p class="second-message">
+            Gracias por llegar a mi vida, eres lo mejor que me ha pasado. Te amo
+            y te adoro, mi bello tesoro.
+          </p>
+          <p class="closing">Con todo mi amor</p>
+          <div class="actions">
+            <button
+              class="music-button"
+              id="musicButton"
+              type="button"
+              aria-pressed="false"
+            >
+              Reproducir música
+            </button>
+            <button class="replay" id="replayButton" type="button">
+              Ver de nuevo
+            </button>
+          </div>
+          <p class="music-status" id="musicStatus" role="status"></p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
